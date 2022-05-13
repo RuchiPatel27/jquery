@@ -1,0 +1,32 @@
+I am Ruchi Patel. 
+I have completed MSC ICT from VNSGU (in July 2018).  
+I am part of Vision Infotech. 
+Talking about my Technical Knowledge,I am Well Known with .Net Core, .Net MVC, jquery, javascript,Bootstrap.
+and My Hobbies is Reading and Dancing.
+
+ 
+
+3 projects
+1.Starta-Property Renting Real Estate
+		We Develop this System for Real Estate Company.
+		In this System Admin,Customer and Brocker main Roles.
+		Customer will required for properties of specific thier location.
+		Brocker will add new properties and 
+		Admin will assign brocker to Customer.
+2.Eitho E-commerce
+		Eitho E-Commerce Project Manage Assest,Properties,Electronics Goods,Services and much more,
+		ability to own Product adviertisitesment on website,
+		eligibale to select particular area on thier desired market.
+		In this System maintane Multi-Tenacy Functionality and Multi-Language  Facility.
+3.PathQuestAP
+		In this Syetem mainatine Accounting Book.
+		In this System all major accounting Solution.
+		Users can sync with their accounting tools such as Intacct, QBO & Xero.
+		We implement custom cheque printing module which is missing in all above tools.
+		Real-time insights to speed-up decision making, Big-Budget Team.
+		Assistance with reporting.
+
+8GB RAM
+1TB HARDISK
+64 bit OPERATING SYSTEM
+i7 PROCESSOR

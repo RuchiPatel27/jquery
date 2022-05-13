@@ -1,0 +1,193 @@
+OutputCaache Attribute
+	Is used to cache the content returned by a controller action method,so that,the same content does not need to be generated each and every time the same controller is invoked.
+Default time for output cache
+	10 second
+The advantages of EF are given bellow:
+
+It provides auto generated code
+It reduce development time
+It reduce development cost
+It enables developers to visually design models and mapping of database
+It provides capability of programming a conceptual model.
+It provides unique syntax (LINQ / Yoda) for all object queries whether it is database or not
+It allow multiple conceptual models to mapped to a single storage schema
+It’s easy to map business objects (with drag & drop tables).
+Disadvantages of Entity Framework
+The disadvantages of EF are given bellow:
+
+Lazy loading is the main drawbacks of EF
+Its syntax is complicated
+Its logical schema is not able to understand business entities and relation among each other
+Logical schema of database is not capable of using certain parts of application
+It is not available for every RDMS
+Need to handle data in nontraditional way
+It does not work if we change any schema of the database. We need to update the schema on the solution.
+It is not good for huge domain model.
+Solid principle
+Routing
+Formcollection in MVC
+Nonaction attribute
+What is Outputcache
+Default time for output cache
+Advantage and disadvantage of Entityframework
+lazy loading
+Middleware
+Liskov substitution principle
+open/close principle
+Methods of Array
+Design Pattern
+CTE
+Web Service
+web Farm & Web Garden
+Flex in css
+Grid in css
+Swagger
+YAML
+Api GAteway
+Microservice
+First vs FirstorDefault
+Skip vs SkipWhile
+Single vs SingleorDefault
+Advantage of 3-tier architecture
+Can we achieve method overloading with different output parameter?
+Differnce between server.transfer and response.redirect
+Linq Pagination
+Kendo Grid
+Why indexes is fast in sql?
+Why we use store procedure.
+What is table valued function.
+How to return multiple value from function.
+Can we Combine two colomn in single colomn white create table?
+What are Different type of assembly?
+Difference between MDI and SDI in detail
+What is Custom and User control
+What is Caching?
+What is Http handler?
+Differnt between executescalar and executereader
+what is dll and exe
+Difference between Pageload and page render
+What is IsPostback
+json notiifer
+vunerability issues
+outlook integration
+nomenclature for model
+access control
+aes encryption
+culture info
+url encode in JS
+difference between == and === in javascript
+NaN in javascript
+difference between RenderPartial and Partial
+What is JSON
+What is tuple
+interface segregation principle
+Left join in LINQ
+SQl rank vs sql dense
+Row number
+What is purpose of using $ 
+What is the purpose of using class in jquery
+Difference between entityframework and linq
+Ways to Increase performance in Entityframework
+What is Area in MVC?
+What are different part of Entity data model?
+SDLC life cycle
+Type casting in c#
+What is CLS and CTS
+Syntax for converting long to int 
+What is Collation in sql.
+What is NVL in SQL
+What is OLTP
+Abtract and factory pattern in details
+Difference between Ref and Out parameter
+How do we Validate data in MVC
+Expression body
+what is angular component
+What is template in angular
+Is there a replacement for $ keyword in jquery
+Difference between Jquery and Javascript
+What is strongly and loosely typed view
+Array and ArrayList
+Self referential table in SQL
+Magic table (after update how to get the previous values- before update values)
+Can foreign key be null?
+How many unique keys can be there in a table
+Data Annotations
+LINQ and lambda
+Closure in javascript
+Callback function in javascript
+Ajax call syntax
+How to declar one to many relationship in datacontext file
+What is Logging mechansim in Asp .Net
+How you can Handle error
+What is Cookie
+What is Docker
+What is Transfer Encoding
+Why we need to write store procedure
+What is option pattern 
+What is keep and peak 
+How do we achieve dynamic polymorphism
+Do we use inheritance in polymorphism? if yes, then why do we have polymorphism if the base is inheritance
+How abstraction gives security
+Explain hierarchical inheritance
+For how many subsequent requests does the tempdata hold value
+What is Request Delegate
+IApplicationbuilder.Use() and IApplicationbuilder.Run()
+What are Json file available in .net core
+What is Web listner
+What is Kestral server
+What is MapExtension
+Different way to Transfer data between controller to controller
+By deafult in which formate you get data to web api
+Async and Await
+patch
+What is Anonymous Type
+Datatable and Data reader
+Constrain and its benifits
+What is Factory pattern
+What is Repository pattern
+What is Nullable Type
+important segments of route
+Why do we have _ViewStart.cshtml
+razor view
+ISNULL in sql
+what is the alternate to IsNULL
+AntiForgeryToken
+What is n-tier Architecture
+What is Multi-layer architecrute
+Design pattern
+Real life scanario of using string and string builder
+When we get error Object refference not set on an instance of an object
+What is type checking?
+Loose coupling and Tight coupling
+
+
+
+
+
+
+Practical
+Swap two number without using third variable
+find 2nd max element from array
+*
+**
+***
+****
+***
+**
+*
+How many loops we need for this
+Can we insert in a table using function in SQL
+
+Query
+Remove duplicate record
+String a = "Good Morning"
+Count occurence of each character in given string
+find max salary department wise
+How to find Distinct value using Linq
+How to delete dupliacte record in sql
+
+
+
+
+
+25 may 22:53

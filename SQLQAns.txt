@@ -1,0 +1,143 @@
+Normalization:
+	Normalization is used to minimize redundancy and dependency by organizing fields and table of a database.
+First Normal Form
+=> The data in each column should be atomic.
+=> The table does not contain any repeating column groups
+=> Identity each record uniquely using primary key
+
+
+1.What is Normalization?
+=> Normalization is a database design technique to remove redundant data.
+
+2.How to implement Normalization?
+=> Normalization is implemented by splitting tables in to two,one with reference data(master table) and other transaction data.
+
+3.What is denormalization?
+=>Denormalization is a database design techinque to improve search performance.
+  Denormalization is Merge tables
+  Duplicate data is present in denormalization. 
+
+4.Explain OLTP vs OLAP
+=> OLTP : Online Transaction Processing
+   OLAP : Online Analytical Processing	
+	OLTP Normalization avoids redundancy and we follow normalization design(1st,2nd and 3rd normal)
+	OLAP DeNormalization improve search performance and we follow denormalization design.
+
+5.Explain 1st,2nd and 3rd Normal Form?
+=> A table is in first normal form when the columns have Atomic Values.
+   It should not have repeating groups.
+=> First normal should be satisfied.All non-key columns should be fully dependent on the primary key.
+=> 3rd Normal:- All 1st and 2nd normal form should be satisfied.No transisent dependency should be present.
+
+6.Primary Key vs Unique Key
+=> Unique can have Nulls,but Primary key can not have Nulls.
+=> Many unique keys but only ONE Primary Key.
+
+7.Char vs Varchar
+=>Char It is a SQL code that helps in storing characters
+  Char is Fixed Length.
+  Char is Static memory allocation
+  varchar It is a SQL code that helps in storing variable character
+  varchar is Variable Length
+  varchar is Dynamic memory allocation
+
+8.What is the use of Index?
+=> Indexes increase search performance.
+   Indexes are used to quickly locate data without having to search every row in a database table every time a database table is accessed.
+
+9.What are the types of Indexes?
+=> Clustered Index and Non-Clustered Indexes.
+
+10.Clustered vs Non-Clustered Indexes
+=> Clustered :
+	1. You can sort the records and store clustered index physically in memory as per the order.
+	2. The size of the clustered index is quite large.
+	3. Data Accessing is Faster.
+	4. By default primary keys of the Table is a Clustered Index.
+	5. A clustered index can improve the performance of data retrieval.
+
+=> Non-Clustered :
+	1. A non-clustered index helps you to creates a logical order for data rows and uses pointers for physical data files.
+	2. The size of the non-clustered index is small compared to the clustered index.
+	3. Slower compared to the clustered index
+	4. It can be used with unique constraint on the table which acts as a composite key.
+	5. It should be created on columns which are used in joins.
+
+11.Function vs Stored procedure
+=> Stored Procedure : 
+	1. Stored Procedures can returns zero or N values.
+	2. Procedure can work with insert,update,delete,select statement.
+	3. We can use function inside the stored procedure.
+	4. Transcation are possible
+	5. Stored procedure can be called by exec followed by stored procedure name
+=> Function :
+	1. Function can return single value which is complsory.
+	2. Functions only works with select Statements
+	3. Stored procedures can not used inside the functions
+	4. Transaction not possible
+	5. Function can be call by using the select statements followed by function name
+
+12.What is Trigger and why do you need it?
+=> Trigger are logics which can be executed when events like insert,update,delete etc happens.
+
+13.What are types of triggers?
+=> There are two types of trigger
+	1. After Trigger : After event has happened logic is executed.
+	2. Instead of trigger : Instead of the event the logic is executed.
+
+14.What is need of Identity?
+=> Identity helps to define auto-incremented column.
+
+15.Explain transactions and how to implement it?
+=> Transaction treats series of activity as one Single Unit.
+   Either everything is successful and evenrything rollbacks.
+How to implements:
+	begin tran
+	commit tran
+	rollback
+
+15. What is inner joins?
+	Inner join select matching records from both tables.
+
+16. Explain Left join?
+	All data from left table selected and only matching records from right table.
+
+17.Explain Full outer joins?
+=> All matching and unmatching records from both left and right table are selected.
+
+18.Explain Right Join?
+=> All data from right table selected and only matching records from left table.
+
+19.Explain Cross joins.
+=> Cross join is cartesian.
+   Every record of one table is joined with other table records.
+
+20.Drop vs Trancate
+=> Drop
+	1.DELETE is a SQL command that removes one or multiple rows from a table using conditions.
+	2.It is a DML(Data Manipulation Language) command.
+	3.It deletes rows one by one with conditions.
+	4.It is much slower when comes to big databases.
+=> Trancate 
+	1.TRUNCATE is a SQL command that removes all the rows from a table without using any condition.
+	2.It is a DDL(Data Definition Language) command.
+	3.It deletes all the data at once.
+	4.It is faster or in other words, instant.
+
+21. Order By
+	The ORDER BY command is used to sort the result set in ascending or descending order.
+	The ORDER BY command sorts the result set in ascending order by default.
+	To sort the records in descending order, use the DESC keyword.
+
+22.Group By
+	The GROUP BY statement groups rows that have the same values into summary rows, like "find the number of customers in each country".
+	The GROUP BY statement is often used with aggregate functions (COUNT(), MAX(), MIN(), SUM(), AVG()) to group the result-set by one or more columns.
+
+23. Having Clause
+	The HAVING clause was added to SQL because the WHERE keyword cannot be used with aggregate functions.
+	Ex.
+		SELECT COUNT(CustomerID), Country
+		FROM Customers
+		GROUP BY Country
+		HAVING COUNT(CustomerID) > 5
+		ORDER BY COUNT(CustomerID) DESC;

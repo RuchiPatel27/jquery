@@ -1,0 +1,62 @@
+ASp.NEt 
+	ASp.Net is Server-Side TEchonology used for developing dynamic website and wweb application.
+ASp.Net LifeCycle
+	Asp.Net life cycle is divided into two groups:
+		1.Application LifeCycle
+			User make a request,this request in the servral stages and Stages are Application start,object Creation,Http Application,Dispose,Application End.
+				Application Start : In this method that can be execute by the web server when user make a request
+				Object Creation : The Http Request contain all the information about the current request 
+				Http Application :  Created and process to the application
+				Dispose : In this method application is destoryed and release unmanaged resource
+				Application End : In this method unloaded memory
+		2.Page LifeCycle
+			Page Lifecycle is an Inilization,restoring and execution before response send to the User.
+			page Request,page start,page inilization,page load,validation,handling,rendering and unload.
+			Page Request : when the user request a page,the server checks the request and then compiles the page
+			Page Start: page start hold two object request and response.The request holds all information from the page and response all information send to the users.
+			Page Inilization : During the page all controls are inilization and each controller provides by the specifices ID 
+			Page load : all the control properties are loaded and information is set using viewstate and controlstae
+			Validation : Validation happen when the page execution goees successful, and then it returns true else the execution fails it returs false
+		
+* Dependency Injection:
+Declartion : 
+	Go to startup class file and configureservice method, added services.AddSingleton<IRepository ,Repository>();
+
+
+3 Types:
+	1.AddSingleton
+	2.AddTransient
+	3.AddScoped
+	
+* CORS : 
+Cross Origin Resource Sharing
+WebConfigue file Include -> EnableCorsAttribute cors = new EnableCorsAttribute("*","*","*");
+configue.EnableCors(cors);
+Parameters of EnableCorsAttribute:
+-> origins
+-> headers
+-> methods
+Install packages : Microsoft Asp.Net.Web.Api.Cors
+
+* HttpResponseMessage
+	Controller can directly used HttpResponseMessage object and
+	Return type:
+		Request.CreateResponse(HttpStatusCode.ok,Value);
+	the data can be null display and if the return type Request.CreateErrorResponse using so display Error Message data not found 
+	Web API controller returns HttpResponseMessage object.
+	An object of HttpResponseMessage directly from an action method.
+	An HttpResponseMessage is a way of returning a message/data from your action.
+	
+* Advantages of Asp.Net Core
+		Asp.Net Core is a Cross-platform,high-performance,open-source framework for building modern,cloud-based,Internet-connected applications
+	=> Asp.Net Core applications can be developed and run across different platforms like Windows,Linux,macOS
+	=> Asp.Net Core application can be hosted on IIS,Apache.
+	=> Asp.Net Core fully open Source.
+	
+	
+	I mentation this certification for my extra achivement and skill. 
+	
+* Differences Between Task And Thread
+=>The task can return a result. There is no direct mechanism to return the result from a thread.
+=>Task supports cancellation through the use of cancellation tokens. But Thread doesn't.
+=>A task can have multiple processes happening at the same time. Threads can only have one task running at a time.

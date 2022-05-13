@@ -1,0 +1,33 @@
+1. What is Asp.Net Core?
+	ASp.Net Core is a Cross-Platform,high performance and open-source web application framework which Microsoft released the first version of Asp.net Core in 2016.
+	
+2. What are the features provided by Asp.Net Core?
+	Built-in supports for Dependency Injection.
+        Built-in supports for the logging framework and it can be extensible.
+	Introduces new,fast and cross-platform web server -kestrel.so, a web application can run without IIS,Apache and Nginx.
+	Command-line supports to create,build and run the application
+	Multiple hosting ways are supports
+	There is no web.config.we can store the custom configuration into an appsetting.json file
+	There is no Global file.We can now register and use the servicees into startup class. 
+	
+3. What are the advantages of Asp.Net Core Over Asp.Net?
+	It is cross-platform,so it can be run on Windows,linux and Mac
+	ASp.NEt can handle more than request the Asp.Net
+	Multiple deployment options available with Asp.net Core
+	
+4. What is MetaPackage?
+	The framework .Net Core 2.0 introduced Metapackage that includes all the supported by Asp.Net code with thier depedendencies into one package.
+	It helps us to do fast developement as we don't require to include the individual ASp.Net core packages.
+	
+5. What is Delegate?
+	A Delegate is a function pointer.
+	A Delegate is a type safe function pointer.
+	A delegate is used when we want to pass a function as a parameter or when we have callback functions
+
+6. What is Sealed Class?
+	A class that is declared as sealed cannot be inherited by another class
+	A method declared as sealed cannot be overridden
+	
+7.What is Partial Classes?
+	Partial Classes allow us to split a class into 2 or more files.All these parts are then combined into a single class,When the application is complied.
+	The partial keyword can alse be used to split a struct or an interface over two or more files.

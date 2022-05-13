@@ -1,0 +1,68 @@
+* Create Table Script in sql server
+Create Table TblUserAnswer
+(
+	AnswerId int identity(1,1) primary key,
+	UserAnswer varchar(50),
+	UserId int NOT NULL REFERENCES  TblUser(UserId),
+	QuesId int NOT NULL REFERENCES  TblQuestion(QueId)
+)
+
+
+* Dynamically add button, textbox, input, radio elements in html form using JavaScript.
+https://www.viralpatel.net/dynamic-add-textbox-input-button-radio-element-html-javascript/
+
+* Create Data Procedure Script
+Create Procedure TestProcedure
+(
+	@Name varchar(50),
+	@Address varchar(50),
+	@DateofBirth date
+)
+As
+Begin
+	Insert into TblUserTest(Name,Address,DateofBirth) Values(@Name,@Address,@DateofBirth)
+End
+
+* Display All Data Procedure Script
+Create Procedure SelectProcedure
+As
+Begin
+	Select * from TblUserTest 
+End
+
+
+* Update Data Procedure Script
+Create Procedure UpdateUser
+(
+	@UserId int,
+	@FirstName varchar(50),
+	@MiddleName varchar(50),
+	@LastName varchar(50),
+	@Address varchar(50),
+	@City varchar(50),
+	@DateofBirth date,
+	@IsSurveyor bit
+)
+As
+Begin
+	Update TblUser
+	Set FirstName = @FirstName,
+		MiddleName = @MiddleName,
+		LastName =@LastName,
+		Address =@Address,
+		City = @City,
+		DateofBirth = @DateofBirth,
+		IsSurveyor = @IsSurveyor
+	Where UserId = @UserId
+End
+
+* Delete Procedure DeleteUser
+Create Procedure DeleteUser
+(
+	@UserId int
+)
+As
+Begin
+	Delete from TblUser Where UserId = @UserId
+End
+
